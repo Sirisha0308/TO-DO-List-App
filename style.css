@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.app {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5563c1;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.filters button {
+  background: #eee;
+  color: #333;
+}
+
+.filters button.active {
+  background: #667eea;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* make task text flexible */
+li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* keep buttons side by side */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 10px;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
